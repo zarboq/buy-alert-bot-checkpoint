@@ -9,7 +9,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 // Setting up network_node_url
-config.network_node_url = "https://starknet-mainnet.infura.io/v3/a93b320c480546c6a043732477af14a3";
+config.network_node_url = process.env.NETWORK_NODE_URL;
 
 const dir = __dirname.endsWith('dist/src') ? '../' : '';
 const schemaFile = path.join(__dirname, `${dir}../src/schema.gql`);
