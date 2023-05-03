@@ -1,0 +1,6 @@
+type Pair {
+  id: String! # Pair id
+  buyAmount: Float! # Updated price
+  timestamp: Int! # Last timestamp where this entry was modified
+  tx: String # Last transaction that modified this entry
+}
